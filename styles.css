@@ -1,0 +1,432 @@
+body {
+    background-color: blanchedalmond;
+    height: 120vh;
+}
+
+#header-frame {
+    text-align: center;
+    margin: 10rem;
+    width: 90vw;
+    margin: 20vh auto 0 auto;
+}
+
+#button-of-color {
+    cursor: pointer;
+    padding: 1rem;
+    background-image: linear-gradient(rgb(21, 255, 111), lime);
+}
+
+#button-of-color:hover {
+    color: azure;
+    cursor: pointer;
+    padding: 1rem;
+    background-image: linear-gradient(rgb(0, 19, 7), rgb(69, 86, 69));
+}
+
+#flag-box {
+    display: none;
+    flex-direction: column;
+    width: 40vw;
+    height: calc(16vh * 3);
+    margin: 2rem auto 0 auto;
+    border: 1px solid black;
+}
+
+.flag-row-1 {
+    background-color: black;
+    margin-bottom: auto;
+    width: 100%;
+    height: 100%;
+    height: 16vh;
+    border: 1px solid black;
+}
+
+.flag-row-2 {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    height: 16vh;
+    border: 1px solid black;
+}
+
+.flag-row-3 {
+    background-color: yellow;
+    margin-top: auto;
+    height: 100%;
+    height: 16vh;
+    border: 1px solid black;
+}
+
+#pick-frame {
+    text-align: center;
+}
+
+.frame-picker-1, .frame-picker-2, .frame-picker-3 {
+    display: inline-block;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.frame-picker-1 {
+    background-image: url("1.png");
+    background-size: contain;
+    margin: auto;
+    background-repeat: no-repeat;
+    width: 11vw;
+    height: 13vh;
+}
+
+.frame-picker-2 {
+    background-image: url("2.png");
+    background-size: cover;
+    width: 10vw;
+    height: 13vh;
+    margin: 0 2rem 0 2rem;
+}
+
+.frame-picker-3 {
+    background-image: url("3.png");
+    background-size: contain;
+    width: 10vw;
+    height: 13vh;
+}
+
+#flag-box-2 {
+    display: none;
+    border: 1px solid black;
+    width: 45vw;
+    height: calc(16vh * 3);
+    margin: 2rem auto 0 auto;
+}
+
+#flag-box-3 {
+    display: none;
+    width: 41vw;
+    object-fit: cover;
+    height: calc(16vh * 3);
+    margin: 2rem auto 0 auto;
+}
+
+.flag-row-1, .flag-row-2, .flag-row-3 {
+    height: 100%;
+}
+
+.flag-column-1 {
+    background-color: rgb(2, 2, 124);
+    width: calc(100% / 3);
+    height: 100%;
+    border: 1px solid black;
+}
+.flag-column-2 {
+    background-color: rgb(240, 255, 255);
+    width: calc(100% / 3);
+    height: 100%;
+    border: 1px solid black;
+}
+
+.flag-column-3 {
+    background-color: red;
+    width: 33.34%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+#japanic-flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 45vw;
+    height: calc(16vh * 3);
+    margin: 2rem auto 0 auto;
+    background-color: azure;
+}
+
+#circle-flag {
+    background-color: red;
+    border-radius: 25rem;
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid black;
+}
+
+@media (min-width: 0px) and (max-width: 164px) {
+    body {
+        height: auto;
+    }
+    .frame-picker-1, .frame-picker-2, .frame-picker-3 {
+        height: 3.5rem;
+        width: 4.5rem;
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    #pick-frame {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 40vw;
+    }
+
+    .frame-picker-1 {
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    .frame-picker-2 {
+        margin: 1rem auto;
+    }
+
+    #header-frame {
+        margin-top: -0.1rem;
+    }
+
+    #flag-box, #flag-box-2, #flag-box-3, #japanic-flag {
+        width: 10rem;
+        height: 7rem;
+    }
+
+    #japanic-flag {
+        margin-top: auto;
+    }
+
+    .flag-row-3 {
+        width: 100%;
+    }
+
+    #circle-flag {
+        width: 50px;
+        height: 50px;
+        margin: 15px 25px 15px 25px;
+    }
+}
+
+@media (min-width: 165px) and (max-width: 360px) {
+
+    body {
+        height: auto;
+    }
+    .frame-picker-1, .frame-picker-2, .frame-picker-3 {
+        height: 3.5rem;
+        width: 4.5rem;
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    #pick-frame {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 40vw;
+    }
+
+    .frame-picker-1 {
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    .frame-picker-2 {
+        margin: 1rem auto;
+    }
+
+    #header-frame {
+        margin-top: -0.1rem;
+    }
+
+    #flag-box, #flag-box-2, #flag-box-3, #japanic-flag {
+        width: 10rem;
+        height: 7rem;
+    }
+
+    #japanic-flag {
+        margin-top: auto;
+    }
+
+    .flag-row-3 {
+        width: 100%;
+    }
+
+    #circle-flag {
+        width: 50px;
+        height: 50px;
+        margin: 15px 25px 15px 25px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 424px) {
+    body {
+        height: auto;
+    }
+    .frame-picker-1, .frame-picker-2, .frame-picker-3 {
+        height: 5.5rem;
+        width: 6.5rem;
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    #pick-frame {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 40vw;
+    }
+
+    .frame-picker-1 {
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    .frame-picker-2 {
+        margin: 1rem auto;
+    }
+
+    #header-frame {
+        margin-top: -0.1rem;
+    }
+
+    #flag-box, #flag-box-2, #flag-box-3, #japanic-flag {
+        width: 17rem;
+        height: 10rem;
+    }
+
+    #japanic-flag {
+        margin-top: auto;
+    }
+
+    .flag-row-3 {
+        width: 100%;
+    }
+
+    #circle-flag {
+        width: 60px;
+        height: 60px;
+        margin: 15px 25px 15px 25px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1023px) {
+    body {
+        height: auto;
+    }
+
+    .frame-picker-1, .frame-picker-2, .frame-picker-3 {
+        height: 5.5rem;
+        width: 6.5rem;
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    .frame-picker-1 {
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    #flag-box, #flag-box-2, #flag-box-3, #japanic-flag {
+        width: 17rem;
+        height: 10rem;
+    }
+
+    #japanic-flag {
+        margin-top: auto;
+    }
+
+    .flag-row-3 {
+        width: 100%;
+    }
+
+    #circle-flag {
+        width: 5rem;
+        height: 5rem;
+        margin: 15px 25px 15px 25px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+    .frame-picker-1, .frame-picker-2, .frame-picker-3 {
+        height: 8.5rem;
+        width: 11rem;
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    .frame-picker-1 {
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    #flag-box, #flag-box-2, #flag-box-3, #japanic-flag {
+        width: 30rem;
+        height: 20rem;
+    }
+
+    #japanic-flag {
+        margin-top: auto;
+    }
+
+    .flag-row-3 {
+        width: 100%;
+    }
+
+    #circle-flag {
+        width: 8rem;
+        height: 8rem;
+        margin: 15px 25px 15px 25px;
+    }
+
+    #frame-1 {
+        margin-top: -3rem;
+        font-size: 30px;
+    }
+
+    #button-of-color {
+        width: 10rem;
+        height: 5rem;
+        font-size: 20px;
+    } 
+}
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+
+    .frame-picker-1, .frame-picker-2, .frame-picker-3 {
+        height: 10rem;
+        width: 15rem;
+        border: 1px solid rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    .frame-picker-1 {
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    #flag-box, #flag-box-2, #flag-box-3, #japanic-flag {
+        width: 45rem;
+        height: 28rem;
+    }
+
+    #japanic-flag {
+        margin-top: auto;
+    }
+
+    .flag-row-3 {
+        width: 100%;
+    }
+
+    #circle-flag {
+        width: 10rem;
+        height: 10rem;
+        margin: 15px 25px 15px 25px;
+    }
+
+    #frame-1 {
+        margin-top: -3rem;
+        font-size: 30px;
+    }
+
+    #button-of-color {
+        width: 10rem;
+        height: 5rem;
+        font-size: 20px;
+    } 
+}
